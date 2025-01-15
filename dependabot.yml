@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/' # Location of package.json
+    schedule:
+      interval: 'weekly' # Options: "daily", "weekly", "monthly"
+    open-pull-requests-limit: 5
+    allow:
+      - dependency-type: 'direct'
+      - dependency-type: 'indirect'
+    # Optionally, ignore specific dependencies
+    # ignore:
+    #   - dependency-name: "apexcharts"
+    #     versions:
+    #       - "4.x.x"

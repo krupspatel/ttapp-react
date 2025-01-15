@@ -1,0 +1,29 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[context.production]
+  branch = "main"
+
+[functions]
+  directory = "netlify/functions"
+
+[build.environment]
+  VITE_APP_VERSION = "v3.2.0"
+  GENERATE_SOURCEMAP = "false"
+  VITE_APP_API_URL = "https://api.tradatomy.com/"
+  VITE_APP_BASE_NAME = ""
+  VITE_APP_GOOGLE_MAPS_API_KEY = "your-google-maps-api-key"
+  VITE_APP_MAPBOX_ACCESS_TOKEN = "your-mapbox-access-token"
+  VITE_APP_FIREBASE_API_KEY = "your-firebase-api-key"
+  VITE_APP_FIREBASE_AUTH_DOMAIN = "your-firebase-auth-domain"
+  VITE_APP_FIREBASE_PROJECT_ID = "your-firebase-project-id"
+  VITE_APP_FIREBASE_STORAGE_BUCKET = "your-firebase-storage-bucket"
+  VITE_APP_FIREBASE_MESSAGING_SENDER_ID = "your-firebase-messaging-sender-id"
+  VITE_APP_FIREBASE_APP_ID = "your-firebase-app-id"
+  VITE_APP_FIREBASE_MEASUREMENT_ID = "your-firebase-measurement-id"
+  VITE_APP_AWS_POOL_ID = "your-aws-pool-id"
+  VITE_APP_AWS_APP_CLIENT_ID = "your-aws-app-client-id"
+  VITE_APP_AUTH0_CLIENT_ID = "your-auth0-client-id"
+  VITE_APP_AUTH0_DOMAIN = "your-auth0-domain"
+  VITE_CLERK_PUBLISHABLE_KEY = "pk_test_aG9wZWZ1bC10dXJ0bGUtNDMuY2xlcmsuYWNjb3VudHMuZGV2JA"
